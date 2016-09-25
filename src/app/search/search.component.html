@@ -1,0 +1,15 @@
+<p>
+  search works!
+</p>
+<div>
+  <h2>Wikipedia Search</h2>
+  <p>This demo shows how to fetch data in Angular 2 using the <code>JsonpModule</code> and observables. Enter a value in the
+    input to see things in action.</p>
+  <hr>
+  <br>
+  <!--<input type="text" (input)="search($event.target.value)"> -->
+  <input type="text" (input)="term$.next($event.target.value)"> 
+  <ul>
+    <li *ngFor="let item of items">{{item}}</li>
+  </ul>
+</div>
