@@ -4,9 +4,7 @@ import { SearchService }   from './search.service';
 import { URLSearchParams,Jsonp } from '@angular/http';
 
 @NgModule({
-    imports: [SearchComponent],
-    exports: [SearchComponent],
-    declarations: [SearchComponent],
-    providers: [SearchService, Jsonp],
+    imports: [SearchComponent, SearchService],
+    declarations: [SearchComponent, SearchService]
 })
 export class SearchModule { }
